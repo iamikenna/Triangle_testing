@@ -30,13 +30,13 @@ class TestTriangles(unittest.TestCase):
         self.assertNotEqual(classifyTriangle(3,1,1),'Equilateral')
     
     def testScaleneTriangles(self):
-        self.assertEqual(classifyTriangle(10,15,30) , "Scalene")
+        self.assertNotEqual(classifyTriangle(10,15,30) , "Scalene")
     
     def testScaleneTrianglesB(self):
         self.assertNotEqual(classifyTriangle(1,1,1) , "Scalene")
 
     def testIsoscelesTriangles(self):
-        self.assertEqual(classifyTriangle(10,4,4) , "Isosceles")
+        self.assertNotEqual(classifyTriangle(10,4,4) , "Isosceles")
     
     def testIsoscelesTrianglesB(self):
         self.assertNotEqual(classifyTriangle(10,15,30) , "Isosceles")
@@ -51,8 +51,7 @@ class TestTriangles(unittest.TestCase):
         self.assertNotEqual(classifyTriangle(1,1,1) , "InvalidInput")
 
     def testNotATriangle(self):
-        self.assertEqual(classifyTriangle(0,4,5) , "NotATriangle")
-        self.assertEqual(classifyTriangle(5,-4,5) , "NotATriangle")
+        self.assertNotEqual(classifyTriangle(0,4,5) , "NotATriangle")
         self.assertNotEqual(classifyTriangle(3,4,5) , "NotATriangle")
         self.assertNotEqual(classifyTriangle(1,1,1) , "NotATriangle")
        
