@@ -29,19 +29,19 @@ class TestTriangles(unittest.TestCase):
         """ Testing a type of traingle"""
         self.assertNotEqual(classify_triangle(1, 1, 1), "Scalene")
 
-    def test_isosceles_triangles(self):
+    def test_isosceles_triangles_u(self):
         """ Testing a type of traingle"""
         self.assertNotEqual(classify_triangle(10, 4, 4), "Isosceles")
 
-    def test_isosceles_triangles(self):
+    def test_isosceles_triangles_o(self):
         """ Testing a type of traingle"""
         self.assertEqual(classify_triangle(5, 5, 4), "Isosceles")
 
-    def test_isosceles_triangles(self):
+    def test_isosceles_triangles_i(self):
         """ Testing a type of traingle"""
         self.assertEqual(classify_triangle(5, 4, 5), "Isosceles")
 
-    def test_isosceles_triangles(self):
+    def test_isosceles_triangles_l(self):
         """ Testing a type of traingle"""
         self.assertEqual(classify_triangle(5, 4, 4), "Isosceles")
 
